@@ -3,12 +3,12 @@ package com.pluralsight.model;
 public class Shipper {
     private int shipperID;
     private String companyName;
-    private String Phone;
+    private String phone;
 
     public Shipper(int shipperID, String companyName, String phone) {
         this.shipperID = shipperID;
         this.companyName = companyName;
-        Phone = phone;
+        this.phone = phone;
     }
 
     public int getShipperID() {
@@ -20,13 +20,13 @@ public class Shipper {
     }
 
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     @Override
     public String toString() {
-        return "shipper ID:" + shipperID +
-                ", companyName:'" + companyName + '\'' +
-                ", Phone:'" + Phone + '\'';
+        return "\nshipper ID:" + shipperID +
+                ", \ncompany Name:'" + companyName +
+                ", \nPhone:'" + phone;
     }
 }
